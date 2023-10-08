@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="course.js"></script>
+		<title>React Course Progress</title>
+	</head>
+	<body>
+		<h2>React 2023 Course Progress</h2>
+		<p>Total Duration: <span id="total"></span></p>
+		<p>Done: <span id="done"></span></p>
+		<!-- <p>Progress: <span id="progress"></span></p> -->
+
+		<div class="progressmeter">
+			<label for="levelmeter">Progress:</label>
+			<!-- min default 0, max default 1, value must be a valid floating number -->
+			<meter
+				id="progressbar"
+				min="0"
+				max="100"
+				low="25"
+				high="75"
+				value="0"
+			></meter>
+			<span id="progress">0%</span>
+		</div>
+	</body>
+</html>

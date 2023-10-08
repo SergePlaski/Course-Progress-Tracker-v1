@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+}
+body {
+  padding: 1rem;
+  font-family:'Open Sans', sans-serif;
+}
+h2, p {
+  margin-bottom: .75rem;
+}
+p, label {
+  font-weight: bold;
+}
+span {
+  color: blue;
+  font-weight: bold;
+}
+#progressbar {
+  width: 15em;
+  vertical-align: middle;
+}
