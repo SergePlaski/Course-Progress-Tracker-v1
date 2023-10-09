@@ -1,23 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;800&family=Roboto+Condensed:wght@400;800&display=swap');
+
 * {
+  --color-primary: rgb(24, 71, 109);
+  --color-secondary: rgba(24, 71, 109, 0.3);
+  --color-light: #ddd;
   box-sizing: border-box;
   outline: none;
   margin: 0;
 }
 body {
-  padding: 1rem;
-  font-family:'Open Sans', sans-serif;
+  max-height: 100dvh;
+  padding: .7rem;
+  /* font-family:'Open Sans', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.2rem;
+  background-color: #333;
 }
-h2, p {
+h2 {
   margin-bottom: .75rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--color-light, white);
 }
-p, label {
+#progressinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  min-width: 400px;
+  padding: .25rem .6rem .75rem .8rem;
+  margin: 0 auto 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  border: 2px solid var(--color-secondary);
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, .35);
+  background-color: #fff;
+}
+.datatime td {
+  padding-right: .25rem;
+  line-height: 1.85;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+#total, #compl {
+  padding-left: 1rem;
+  text-align: right;
+  color: darkred;
+}
+
+.datachart {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.datachart label {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -35%);
+  font-size: 1.2rem;
+  color: rgb(24, 71, 109);
+}
+#modules {
+  max-width: 1180px;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(11, 1fr);
+  grid-gap: .5rem;
+}
+.module {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 2px solid var(--color-secondary);
+  border-radius: .5rem;
+  font-size: .95rem;
+  background-color: white;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.module__number {
+  height: 1.8rem;
+  min-width: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
   font-weight: bold;
 }
-span {
-  color: blue;
+.module__title {
+  flex-grow: 1;
+  padding-inline: .5rem;
   font-weight: bold;
 }
-#progressbar {
-  width: 15em;
-  vertical-align: middle;
+.module__duration {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+.selected {
+  background-color: rgb(102, 168, 223);
+}
+.optional {
+  background-color: rgb(188, 188, 188);
+  cursor: none;
+  pointer-events: none;
 }
