@@ -9,12 +9,17 @@ This is a simple app that tracks my progress in my Ract 2023 course. It is built
 - State management with localStorage
 - CSS Grid and Flexbox
 
-Chart.js Documentation and example:
+App Screenshot: 
+![app screenshot](/screenshot.jpg)
+
+## Chart.js Documentation and example:
 https://www.chartjs.org/docs/latest/charts/doughnut.html
 https://codepen.io/benlor/pen/KKpdvVX
 
 Include Chart library:
+```html
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
+```
 ## TODO: 
 - Convert to React components
 - Add ability to add and store my notes and code snippets using Firebase or other backend API
