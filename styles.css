@@ -39,6 +39,8 @@ h2 {
   border: 2px solid var(--color-secondary);
   box-shadow: 0 0 2px 2px rgba(255, 255, 255, .35);
   background-color: #fff;
+  pointer-events: none;
+  user-select: none;
 }
 .datatime td {
   padding-right: .25rem;
@@ -58,7 +60,6 @@ h2 {
   width: 100px;
   height: 100px;
 }
-
 .datachart label {
   position: absolute;
   margin: 0;
@@ -68,6 +69,12 @@ h2 {
   font-size: 1.2rem;
   color: rgb(24, 71, 109);
 }
+.datachart canvas#myChart {
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
 #modules {
   max-width: 1180px;
   margin: auto;
@@ -86,6 +93,7 @@ h2 {
   background-color: white;
   color: var(--color-primary);
   cursor: pointer;
+  user-select: none;
 }
 .module__number {
   height: 1.8rem;
