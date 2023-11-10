@@ -62,7 +62,7 @@ const modules = [
 		title: "25 - A (Pretty Deep Dive) Introduction to Next.js",
 		duration: "3:16",
 	},
-	{ title: "26 - Animating React Apps", duration: "3:05" },
+	{ title: "26 - Animating React Apps", duration: "1:09" },
 	{ title: "27 - Replacing Redux with React Hooks", duration: "0:56" },
 	{ title: "28 - Testing React Apps (Unit Tests)", duration: "1:12" },
 	{ title: "29 - React + TypeScript", duration: "2:35" },
@@ -74,5 +74,5 @@ const modules = [
 		title: "31 - Optional React Summary & Core Feature Walkthrough",
 		duration: "0:00",
 	},
-	{ title: "32 - Course Roundup", duration: "0:10" },
+	{ title: "32 - Course Roundup", duration: "0:00" },
 ];
