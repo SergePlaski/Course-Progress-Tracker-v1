@@ -1,6 +1,6 @@
 # Course Progress Tracker App (Vanilla JS Version)
 
-This is a simple app that tracks my progress in my Ract 2023 course. It is built using Vanilla JS and Chart.JS library as my main goal was to brush up and practice the following topics: 
+This is a simple app that tracks my progress in my Advanced Ract 2023 course. It is built using Vanilla JS and Chart.JS library as my main goal was to brush up and practice the following topics: 
 
 - Array methods
 - String operations
@@ -22,4 +22,5 @@ Include Chart library:
 ```
 ## TODO: 
 - Convert to React components
+- Change the Chart lib -based progress donut indicator with a pure CSS one.
 - Add ability to add and store my notes and code snippets using Firebase or other backend API
